@@ -56,4 +56,8 @@ public class Avion {
                 " }";
     }
 
+    public static void print_break() {
+        System.out.println("-------------------------------------------------------------------------");
+    }
+
 }

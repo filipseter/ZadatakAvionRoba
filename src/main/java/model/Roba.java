@@ -66,7 +66,7 @@ public class Roba {
     //CONSTRUCT
     public Roba( ) { }
     public Roba( String naziv, String opis,
-                 double tezina, double visina, double duzina, double sirina )
+                 double tezina, double visina, double duzina, double sirina, Avion avion )
     {
         this.naziv = naziv;
         this.opis = opis;
@@ -74,6 +74,7 @@ public class Roba {
         this.visina = visina;
         this.duzina = duzina;
         this.sirina = sirina;
+        this.avion = avion;
     }
 
     //TO_STRING
