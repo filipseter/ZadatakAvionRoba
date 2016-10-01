@@ -18,7 +18,7 @@ public class Avion {
     private String oznaka;
     @DatabaseField( columnName = POLJE_RASPON_KRILA, canBeNull = false )
     private int rasponKrila;
-    @ForeignCollectionField( foreignFieldName = "let" )
+    @ForeignCollectionField( foreignFieldName = "avion" )
     ForeignCollection<Roba> roba;
 
     //GETTERS
@@ -35,6 +35,9 @@ public class Avion {
     }
     public void setRasponKrila( int rasponKrila ) {
         this.rasponKrila = rasponKrila;
+    }
+    public void setRoba( ForeignCollection<Roba> roba ) {
+        this.roba = roba;
     }
 
     //CONSTRUCT

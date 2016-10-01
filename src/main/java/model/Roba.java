@@ -27,8 +27,7 @@ public class Roba {
     private double duzina;
     @DatabaseField( columnName = POLJE_SIRINA, canBeNull = false )
     private double sirina;
-    @DatabaseField( foreign = true, columnName = "let",
-                        foreignAutoRefresh = true, canBeNull = false )
+    @DatabaseField( columnName = "avion", foreign = true,foreignAutoRefresh = true, canBeNull = false )
     private Avion avion;
 
     //GETTERS
@@ -39,6 +38,7 @@ public class Roba {
     public double getVisina() { return visina; }
     public double getDuzina() { return duzina; }
     public double getSirina() { return sirina; }
+    public Avion getAvion() { return avion; }
 
     //SETTERS
     public void setNaziv( String naziv ) {
@@ -58,6 +58,9 @@ public class Roba {
     }
     public void setSirina( double sirina ) {
         this.sirina = sirina;
+    }
+    public void setAvion( Avion avion ) {
+        this.avion = avion;
     }
 
     //CONSTRUCT
